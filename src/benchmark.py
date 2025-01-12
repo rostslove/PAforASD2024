@@ -1,8 +1,8 @@
 import numpy as np
 import time
 from sklearn.datasets import make_blobs
-from seqkmeans import SeqKMeans
-from parallelkmeans import ParallelKMeans
+from PAforASD2024.src.kmeans.seqkmeans import SeqKMeans
+from PAforASD2024.src.kmeans.parallelkmeans import ParallelKMeans
 import matplotlib.pyplot as plt
 import os
 from multiprocessing import cpu_count
@@ -60,7 +60,7 @@ if __name__ == "__main__":
         plt.xlabel('Number of Processes')
         plt.ylabel('Speedup')
         plt.grid(True)
-        plt.savefig('./speedup.png')
+        plt.savefig('../benchmarks/speedup.png')
         plt.close()
         pbar.update(1)
 
