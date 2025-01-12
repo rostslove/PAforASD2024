@@ -1,8 +1,8 @@
 import numpy as np
 import time
 from sklearn.datasets import make_blobs
-from PAforASD2024.src.kmeans.seqkmeans import SeqKMeans
-from PAforASD2024.src.kmeans.parallelkmeans import ParallelKMeans
+from seqkmeans import SeqKMeans
+from parallelkmeans import ParallelKMeans
 import matplotlib.pyplot as plt
 import os
 from multiprocessing import cpu_count
